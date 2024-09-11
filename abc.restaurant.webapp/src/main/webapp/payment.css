@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body Background */
+body {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px; /* Space for fixed header */
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header .navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#menu-bar {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Payment Form Styles */
+.payment-form {
+  width: 500px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="number"],
+.payment-form input[type="radio"],
+.payment-form input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7f8a58;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #588821;
+}
+
+.payment-form a {
+  color: blue;
+  text-decoration: none;
+}
+
+.payment-form a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}

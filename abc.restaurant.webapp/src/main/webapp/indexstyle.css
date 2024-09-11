@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  background-color: #ddd;
+  /* Ensure body background color doesn't affect the home section background */
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header .navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#menu-bar {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Home Section Styling */
+section.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  background: url('rest7.jpg') no-repeat center center;
+  background-size: cover;
+  background-color: #f0f0f0; /* Set a fallback color */
+  text-align: center;
+}
+
+section.home .content {
+  max-width: 600px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure it stays above the background image */
+}
+
+section.home {
+  background-color: #f0f0f0; /* Set a fallback color */
+  background-image: url('rest5.jpg'); /* Make sure the path is correct */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+section.home h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+section.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+section.home .btn {
+  padding: 0.8rem 2rem;
+  background-color: rgb(128, 128, 255);
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+section.home .btn:hover {
+  background-color: #000000;
+  color: rgb(128, 128, 255);
+}
+
+/* Speciality Section Styling */
+section.speciality {
+  padding: 5% 10%;
+  background-color: #fff;
+}
+
+section.speciality .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+section.speciality .heading span {
+  color: #ffa500;
+}
+
+section.speciality .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section.speciality .box {
+  width: 30%;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section.speciality .box img.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+section.speciality .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+section.speciality .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+section.speciality .content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+section.speciality .content img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Footer Section Styling */
+section.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+section.footer h1.credit {
+  font-size: 1rem;
+  color: #fff;
+}
+
+section.footer h1.credit span {
+  color: #ffa500;
+}
